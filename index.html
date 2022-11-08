@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Sign up form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="img">
+      <img src="corals.jpg" alt="">
+      <p class="credit">Photo by <a href="https://unsplash.com/@chris_reyem?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Chris Reyem</a> on <a href="https://unsplash.com/s/photos/coral?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+      </p>
+    </div>
+    <div class="main">
+      <div class="header">
+        <div>Welcome to a <strong>fake</strong> online service! You need something like this in your life
+          to give you everything you've ever wanted.</div>
+        <div>Sign up now to get started.
+        </div>
+        <p>You <em>know</em> you want to.</p>
+      </div>
+      <div class="form">
+        <form onsubmit="checkPassword()" action="index.html" method="post">
+        <fieldset>
+          <h2>Sign me up!</h2>
+
+          <div class="form_input">
+            <div class="left">
+              <ul>
+                <li>
+                  <label for="last_name">FIRST NAME</label>
+                  <input type="text" id="last_name" name="user_first_name" value="">
+                </li>
+                <li>
+                  <label for="email">EMAIL</label>
+                  <input type="email" name="user_email" value="">
+                </li>
+                <li>
+                  <label for="password">PASSWORD</label>
+                  <input type="password" id="password" name="user_password" value="">
+                  <label for="password" class="label"></label>
+                </li>
+              </ul>
+              <p id="confirmText"></p>
+            </div>
+            <div class="right">
+              <ul>
+                <li>
+                  <label for="last_name">LAST NAME</label>
+                  <input type="text" id="last_name" name="user_last_name" value="">
+                </li>
+                <li>
+                  <label for="phone_number">PHONE NUMBER</label>
+                  <input type="text" id="phone_number" name="user_phone_number" value="">
+                </li>
+                <li>
+                  <label for="confirmPassword">CONFIRM PASSWORD</label>
+                  <input type="password" id="confirmPassword" name="user_password" value="">
+                  <label for="confirmPassword" class="label"></label>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <button type="submit" name="button">Create Account</button>
+        </fieldset>
+        </form>
+      </div>
+      <div class="footer">
+        Already have an account? <span class="logIn">Log in.</span>
+      </div>
+    </div>
+  </body>
+  <script src="index.js" charset="utf-8"></script>
+</html>
